@@ -11,7 +11,7 @@ NOUNS = ['Athlete', 'Clown', 'Shovel', 'Paleo Diet', 'Doctor', 'Parent',
 'Plastic Straw','Serial Killer', 'Telephone Psychic']
 PLACES = ['House', 'Attic', 'Bank Deposit Box', 'School', 'Basement',
 'Workplace', 'Donut Shop', 'Apocalypse Bunker']
-WHEN = ['Soon', 'This Year', 'Later Today', 'RIGHT NOW', 'Next Week']
+WHEN = ['Soon', 'This Year', 'Later Today', 'RIGHT NOW', 'Next Week'] #3. список будет пуст, не из чего будет выбирать
 
 
 def main():
@@ -26,7 +26,7 @@ def main():
         if not response.isdecimal():
             print('Please enter a number.')
         else:
-            numberOfHeadlines = int(response)
+            numberOfHeadlines = int(response) #1. ошибка в том что range будет пустым #2. вводное значение не засчитается
         for i in range(numberOfHeadlines):
             clickbaitType = random.randint(1, 8)
 
